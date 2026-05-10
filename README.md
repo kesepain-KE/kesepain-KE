@@ -42,25 +42,5 @@
 ## 📊 GitHub 数据
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kesepain-KE&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub 统计" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kesepain-KE&theme=tokyonight&hide_border=true" alt="连续活跃" />
-</p>
-
----
-
-## 🏆 成就墙
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=kesepain-KE&theme=tokyonight&no-frame=true&column=7" alt="Trophies" />
-</p>
-
----
-
-## 🐱 访客计数
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=kesepain-KE&color=36D1DC&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=kesepain-KE&color=36D1DC&style=for-the-badge&label=PROFILE+VIEWS" alt="访问量" />
 </p>
