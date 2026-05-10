@@ -1,4 +1,3 @@
-```markdown
 <h1 align="center">你好呀 👋 我是 kesepain</h1>
 
 <p align="center">
@@ -65,4 +64,3 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=kesepain-KE&color=36D1DC&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views" />
 </p>
-```
