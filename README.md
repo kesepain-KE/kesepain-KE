@@ -1,7 +1,9 @@
+```markdown
 <h1 align="center">你好呀 👋 我是 kesepain</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=36D1DC&center=true&vCenter=true&multiline=true&repeat=true&width=500&height=100&lines=构建能自主思考和行动的AI+Agent;永远在学习的路上" alt="Typing SVG" />
+  <img src="https://img.shields.io/badge/构建-AI%20Agent-36D1DC?style=for-the-badge&logo=robotframework&logoColor=white" />
+  <img src="https://img.shields.io/badge/永远在学习-的路上-4FC08D?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
 ---
@@ -11,7 +13,7 @@
 - 🔭 正在努力搭建 **AI Agent 框架，目标是让 AI 自己拆活、自己干活**
 - 🌱 正在探索 **任务驱动的动态 Agent 集群**
 - 💬 聊天可以聊 **Python、AI Agent、LLM、工具调用**
-- 📫 联系我：**(3378126950@qq.com)**
+- 📫 联系我：**[3378126950@qq.com](mailto:3378126950@qq.com)**
 - ⚡ 有趣的事实：**我给自己造的 AI Agent 当猫猫助手 🐱**
 
 ---
@@ -41,7 +43,7 @@
 ## 📊 GitHub 数据
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kesepain-KE&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&lang=zh" alt="GitHub 统计" />
+  <img src="https://github-readme-stats.vercel.app/api?username=kesepain-KE&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub 统计" />
 </p>
 
 <p align="center">
@@ -63,3 +65,4 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=kesepain-KE&color=36D1DC&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views" />
 </p>
+```
