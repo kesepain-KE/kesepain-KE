@@ -42,5 +42,9 @@
 ## 📊 GitHub 数据
 
 <p align="center">
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=kesepain-KE&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub 统计" />
+</p>
+
+<p align="center">
   <img src="https://komarev.com/ghpvc/?username=kesepain-KE&color=36D1DC&style=for-the-badge&label=PROFILE+VIEWS" alt="访问量" />
 </p>
