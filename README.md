@@ -94,22 +94,12 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=1" />
 
 <br>
-
-## 📈 贡献动态
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kesepain-KE&theme=tokyo-night&hide_border=true&radius=8" width="95%" />
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=kesepain-KE&color=00C9FF&style=for-the-badge&label=累计访问量" />
-</div>
-
 <br>
 
 ---
+<br>
+
+<!-- 分隔线 -->---
 
 <div align="center">
   <i>✨ 用优雅的架构，让代码改变世界 ✨</i>
