@@ -1,90 +1,56 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=500&lines=Hello!+I'm+kesepain+%F0%9F%91%8B;AI+Agent+%E6%9E%84%E5%BB%BA%E8%80%85+%C2%B7+%E5%85%A8%E6%A0%88%E5%AD%A6%E4%B9%A0%E8%80%85;%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E7%8E%A9%E5%AE%B6;%E8%AE%A9+AI+%E8%87%AA%E5%B7%B1%E6%8B%86%E6%B4%BB%E3%80%81%E8%87%AA%E5%B7%B1%E5%B9%B2%E6%B4%BB!&center=true&size=24)](https://git.io/typing-svg)
+<!-- 波浪动画横幅（头部） -->
+<a href="https://github.com/kesepain-KE"><img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9FF,100:92FE9D&height=200&section=header&text=kesepain&fontSize=60&fontAlignY=35&animation=fadeIn&fontColor=white" /></a>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" />
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/developer.svg" height="200px" />
-  <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" />
-</picture>
+<!-- 打字动画 -->
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2000&pause=500&color=00C9FF&center=true&vCenter=true&width=600&lines=AI+Agent+%E6%9E%84%E5%BB%BA%E8%80%85+%C2%B7+%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E7%8E%A9%E5%AE%B6;%E8%AE%A9+AI+%E8%87%AA%E5%B7%B1%E6%8B%86%E6%B4%BB%E3%80%81%E8%87%AA%E5%B7%B1%E5%B9%B2%E6%B4%BB;%E5%96%9C%E6%AC%A2%E6%8D%A3%E9%BC%93%E6%9E%B6%E6%9E%84%E3%80%81%E6%95%B0%E6%8D%AE%E3%80%81%E5%92%8C%E6%9C%89%E8%B6%A3%E7%9A%84%E4%B8%9C%E8%A5%BF" alt="Typing SVG" /></a>
 
-<div>&nbsp;</div>
+<!-- 社交按钮 -->
+<p align="center">
+  <a href="https://github.com/kesepain-KE"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://komarev.com/ghpvc/?username=kesepain-KE&style=for-the-badge&color=00C9FF" />
+</p>
 
-<div>
-  <a href="https://github.com/kesepain-KE"><img src="https://img.shields.io/badge/GitHub-kesepain--KE-181717?logo=github" /></a>&emsp;
-  <img src="https://komarev.com/ghpvc/?username=kesepain-KE&label=Views&color=36D1DC&style=flat" />
-  <img src="https://img.shields.io/github/followers/kesepain-KE?label=Followers&style=social" />
-</div>
+<p align="center">
+  <img src="https://img.shields.io/github/followers/kesepain-KE?style=for-the-badge&color=92FE9D&labelColor=141321" />
+  <img src="https://img.shields.io/github/stars/kesepain-KE?style=for-the-badge&color=00C9FF&labelColor=141321" />
+</p>
 
 </div>
 
 ---
 
-# 🙋 About Me
+## 👋 关于我
 
-<table>
-
-<tr><td>
-
-### 🤺 关于我
-
-<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/grass.png" />
-
-<p>&emsp;&emsp;嗨，你好，我是 <strong>kesepain</strong>。</p>
-<p>&emsp;&emsp;🤖 正在努力搭建 <strong>AI Agent 框架</strong>，目标是让 AI 自己拆活、自己干活</p>
-<p>&emsp;&emsp;🧩 同时捣鼓 <strong>知识图谱</strong>，让智能体不只是"记得"，还能"想得清楚"</p>
-<p>&emsp;&emsp;🌱 正在探索 <strong>任务驱动的动态 Agent 集群</strong></p>
-<p>&emsp;&emsp;⚡ 有趣的事实：我给我自己的 AI Agent 设定了一只 <strong>猫猫人格 🐱</strong></p>
-
-</tr></td>
-
-<tr><td>
-
-### 🔥 核心项目
-
-| 项目 | ⭐ | 一句话 |
-|:-----|:--:|:-------|
-| [**votx-agent**](https://github.com/kesepain-KE/votx-agent) | ⭐8 | 🚀 多用户 AI Agent 框架 — 角色扮演 + 工具调用 + 对话持久化 + 自学习闭环 |
-| [**kemo-grapth**](https://github.com/kesepain-KE/kemo-grapth) | ⭐1 | 🧠 本地知识图谱管理服务 — 图数据库 + Web 可视化 + Obsidian 兼容，**无需 LLM** |
-| [**kesepain-Agent**](https://github.com/kesepain-KE/kesepain-Agent) | ⭐3 | 📦 初代终端 Agent 框架（已归档） |
-
-</tr></td>
-
-</table>
-
----
-
-### 🚀 重点展开
-
-<table>
+<table cellspacing="0" cellpadding="0" width="100%">
 <tr>
-<td width="50%">
+<td width="33%" valign="top">
 
-#### 🧠 votx-agent
-<sub><i>多用户 AI Agent 框架</i></sub>
-
-- 👥 **多用户隔离** — 每人独立记忆/知识库
-- 🔧 **Skills/Plugins 体系** — 内置 23+ 技能
-- 📋 **任务计划** — 自动拆解 + 批准执行
-- 📨 **外部消息路由** — QQ/NapCat + Telegram
-- 🖼️ **多模态** — 识图/语音/生成
-- 💾 **自学习记忆** — 主动审阅进化
-
-**技术栈：** Python · Flask · React · TypeScript · SQLite
+> ### 🤖 AI Agent
+> - 🔧 构建 **votx-agent** 多用户 AI 框架
+> - 🧠 技能/插件体系 + 工具调用
+> - 📨 对接 QQ / Telegram 消息路由
+> - 💾 自学习记忆系统
 
 </td>
-<td width="50%">
+<td width="33%" valign="top">
 
-#### 🧩 kemo-grapth
-<sub><i>知识图谱管理服务</i></sub>
+> ### 🧩 知识图谱
+> - 📊 打造 **kemo-grapth** 图数据库服务
+> - 🌐 D3 force 可视化图谱
+> - 📝 Obsidian 兼容导入/导出
+> - 🚫 纯结构化，**不依赖 LLM**
 
-- 📊 **图数据库** — SQLite + 结构化 API
-- 🌐 **Canvas 可视化** — D3 force 交互图谱
-- 📝 **Obsidian 兼容** — 一键导入导出
-- 🔄 **Upsert API** — 智能体友好，按名创建/更新
-- 🚫 **纯结构化** — 不依赖任何 LLM
+</td>
+<td width="34%" valign="top">
 
-**技术栈：** Python · FastAPI · Vue 3 · D3.js · SQLite
+> ### ⚡ 更多兴趣
+> - 🐱 给 AI Agent 设定猫猫人格
+> - 🎮 Minecraft 模组爱好者
+> - 🔬 树莓派嵌入式 + AI 控制
+> - 📓 Obsidian 知识管理
 
 </td>
 </tr>
@@ -92,64 +58,67 @@
 
 ---
 
-### 🛠️ 技术栈
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=flat" />
-  <img src="https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=fff&style=flat" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=fff&style=flat" />
-  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=flat" />
-  <img src="https://img.shields.io/badge/Vue.js-4FC08D?logo=vuedotjs&logoColor=fff&style=flat" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff&style=flat" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff&style=flat" />
-  <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff&style=flat" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=000&style=flat" />
-  <img src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=fff&style=flat" />
-  <img src="https://img.shields.io/badge/Obsidian-483699?logo=obsidian&logoColor=fff&style=flat" />
-</p>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=py,flask,fastapi,react,vue,ts,vercel,docker,git,linux,sqlite,bash&perline=12" />
-</p>
-
----
-
-### 📊 GitHub 数据
+## 🔥 核心项目
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api?username=kesepain-KE&show_icons=true&theme=tokyonight&hide_border=true" />
-  <img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=kesepain-KE&layout=compact&theme=tokyonight&hide_border=true" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kesepain-KE&theme=tokyonight&hide_border=true" />
-</div>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=kesepain-KE&theme=gruvbox&row=1&column=6&no-frame=true&no-bg=true" width="90%" />
+  <a href="https://github.com/kesepain-KE/votx-agent">
+    <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=kesepain-KE&repo=votx-agent&theme=tokyonight&hide_border=true&title_color=00C9FF" width="49%" />
+  </a>
+  <a href="https://github.com/kesepain-KE/kemo-grapth">
+    <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=kesepain-KE&repo=kemo-grapth&theme=tokyonight&hide_border=true&title_color=00C9FF" width="49%" />
+  </a>
 </div>
 
 ---
 
-### 📈 贡献动态
+## 🛠️ 技术栈
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=py,flask,fastapi,react,vue,ts,vite,docker,git,linux,sqlite,bash,github,md&perline=7" />
+</div>
+
+---
+
+## 📊 GitHub 数据
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kesepain-KE&theme=tokyonight" width="32%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kesepain-KE&theme=tokyonight" width="32%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kesepain-KE&theme=tokyonight" width="32%" />
+</div>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=kesepain-KE&theme=tokyonight&no-frame=true&row=1&column=7" width="100%" />
+</div>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kesepain-KE&theme=tokyonight" width="100%" />
+</div>
+
+---
+
+## 📈 贡献动态
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=kesepain-KE&theme=tokyo-night&hide_border=true" width="95%" />
 </div>
 
+<!-- 贪吃蛇动画（需配置 GitHub Action 后才能显示） -->
+<!-- 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kesepain-KE/kesepain-KE/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kesepain-KE/kesepain-KE/output/github-contribution-grid-snake.svg" />
+  <img alt="Snake" src="https://raw.githubusercontent.com/kesepain-KE/kesepain-KE/output/github-contribution-grid-snake.svg" width="100%" />
+</picture>
+-->
+
 ---
 
 <div align="center">
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
-
-<br/>
-
-> **We're making the world a better place. Through constructing elegant hierarchies for maximum code reuse and extensibility.**
-
-<br/>
-
-<img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/icon.png" width="100" />
-
+  <i>We're making the world a better place — through elegant architectures for maximum code reuse and extensibility.</i>
 </div>
+
+<br />
+
+<!-- 波浪动画横幅（尾部） -->
+<a href="https://github.com/kesepain-KE"><img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:92FE9D,100:00C9FF&height=120&section=footer&animation=twinkling" /></a>
