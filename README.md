@@ -84,12 +84,6 @@
 
 <br>
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=kesepain-KE&theme=tokyonight&no-frame=true&row=1&column=7" width="100%" />
-</div>
-
-<br>
-
 <!-- 分隔线 -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=1" />
 
