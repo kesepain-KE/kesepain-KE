@@ -113,7 +113,7 @@
 <br>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=kesepain-KE&theme=tokyonight&hide_border=true" width="75%" />
+  <img src="https://github-readme-streak-stats-eight.vercel.app/?user=kesepain-KE&theme=tokyonight&hide_border=true" width="75%" />
 </div>
 
 <br>
