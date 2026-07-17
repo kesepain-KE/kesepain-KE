@@ -9,8 +9,8 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/构建-AI%20Agent-00C9FF?style=for-the-badge&logo=robotframework&logoColor=white" />
-  <img src="https://img.shields.io/badge/永远在学习-的路上-92FE9D?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/知识图谱-爱好者-36D1DC?style=for-the-badge&logo=obsidian&logoColor=white" />
+  <img src="https://img.shields.io/badge/拆解独立-不继承整合-92FE9D?style=for-the-badge&logo=awesomewm&logoColor=white" />
+  <img src="https://img.shields.io/badge/边缘计算-爱好者-36D1DC?style=for-the-badge&logo=raspberrypi&logoColor=white" />
 </p>
 
 </div>
@@ -19,10 +19,11 @@
 
 ## 🧑‍💻 关于我
 
-- 🔭 正在努力搭建 **AI Agent 框架，目标是让 AI 自己拆活、自己干活**
-- 🧩 同时捣鼓 **知识图谱**，让智能体不只是"记得"，还能"想得清楚"
-- 🌱 正在探索 **任务驱动的动态 Agent 集群**
-- 💬 聊天可以聊 **Python、AI Agent、LLM、工具调用、知识图谱**
+- 🔭 正在搭建 **AI Agent 生态**：独立框架 + 网关适配 + 知识图谱 + 硬件技能，每个项目拆开独立维护
+- 🧩 信奉「**拆解独立，不继承整合**」——单一职责，通过 API / 协议通信，不共享代码库
+- 🖥️ 多设备分布式部署：树莓派 · J1900-ITX · x86 服务器 · 软路由，Agent 跑在各种边缘节点上
+- 🌱 正在探索 **任务驱动的动态 Agent 集群** 和 **Loop 式智能体**
+- 💬 聊天可以聊 **Python、AI Agent、LLM、工具调用、知识图谱、边缘部署**
 - ⚡ 有趣的事实：**我给自己造的 AI Agent 当猫猫助手 🐱**
 - 📫 联系我：**[kesepain@github](https://github.com/kesepain-KE)**
 
@@ -37,9 +38,40 @@
 
 | 项目 | 描述 | 技术栈 | ⭐ |
 |:-----|:-----|:--------|:--:|
-| [**votx-agent**](https://github.com/kesepain-KE/votx-agent) | 🚀 多用户 AI Agent 框架 — 角色扮演 + 工具调用 + 对话持久化 + 自学习闭环 | Python / Flask / React / TypeScript | ⭐8 |
-| [**kemo-grapth**](https://github.com/kesepain-KE/kemo-grapth) | 🧠 本地知识图谱管理服务 — 图数据库 + Web 可视化 + Obsidian 兼容，**无需 LLM** | Python / FastAPI / Vue 3 / D3.js | ⭐1 |
+| [**votx-agent**](https://github.com/kesepain-KE/votx-agent) | 🚀 多用户 AI Agent 框架 — 角色扮演 + 工具调用 + 对话持久化 + 自学习闭环 + 多模态 + 外部消息路由 | Python / Flask / React / TypeScript | ⭐7 |
+| [**llm-adapter-kemo**](https://github.com/kesepain-KE/llm-adapter-kemo) | 🔌 LLM API 调用适配层 — 多提供商并发管理 + 多模态中转 + Token 精确统计 + Web 管理面板 | Python / FastAPI / Node.js | ⭐1 |
+| [**raspberry-pi-skill**](https://github.com/kesepain-KE/raspberry-pi-skill) | 🥧 树莓派硬件控制技能包 — GPIO 读写 / PWM / I2C / SPI / UART / 传感器 + 系统监控 | Python | ⭐1 |
+| [**kesepain-graph**](https://github.com/kesepain-KE/kesepain-graph) | 🧠 本地知识图谱管理服务 — 图数据库 + Web 可视化 + Obsidian 兼容（已归档，由 kemo-graph 接替） | Python / FastAPI / Vue 3 / D3.js | ⭐1 |
 | [**kesepain-Agent**](https://github.com/kesepain-KE/kesepain-Agent) | 📦 初代终端 Agent 框架（已归档） | Python | ⭐3 |
+
+<br>
+
+## 🏗️ 项目生态
+
+```
+┌─ 网关层 ─────────────────────┐
+│  llm-adapter-kemo             │  ← 多提供商 API 中转 + 多模态
+└──────────┬───────────────────┘
+           │ 提供 LLM 能力
+┌──────────▼───────────────────┐
+│  votx-agent                   │  ← Agent 核心框架（自迭代 / 多用户）
+└──┬────────┬────────┬─────────┘
+   │        │        │
+   ▼        ▼        ▼
+┌──────┐ ┌──────┐ ┌──────────┐
+│ 知识  │ │ 硬件  │ │  外部    │
+│ 图谱  │ │ 技能  │ │  消息    │
+│kemo- │ │pi-   │ │  QQ/TG   │
+│graph │ │skill │ │          │
+└──────┘ └──────┘ └──────────┘
+```
+
+> 每个模块独立仓库，通过 API / 协议通信。不搞单体，不搞继承。
+
+<br>
+
+<!-- 分隔线 -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=1" />
 
 <br>
 
@@ -56,10 +88,12 @@
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
   <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" />
+  <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white" />
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=py,flask,fastapi,react,vue,ts,docker,git,linux,sqlite,bash&perline=11" />
+  <img src="https://skillicons.dev/icons?i=py,flask,fastapi,react,vue,ts,docker,git,linux,sqlite,nginx,bash&perline=12" />
 </p>
 
 <br>
@@ -92,8 +126,6 @@
 
 ---
 <br>
-
-<!-- 分隔线 -->---
 
 <div align="center">
   <i>✨ 用优雅的架构，让代码改变世界 ✨</i>
