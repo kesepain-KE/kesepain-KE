@@ -38,14 +38,23 @@
 
 ## 🚀 项目展示
 
+### 🔥 活跃项目
+
 | 项目 | 描述 | 技术栈 | ⭐ |
 |:-----|:-----|:--------|:--:|
-| [**kemo-agent**](https://github.com/kesepain-KE/votx-agent) 🔥 | 🚀 多用户 AI Agent 框架 — 事件驱动架构、工具调用、持久记忆、自我改进、多模态、外部消息路由、子代理系统 | Python / Flask / React / TypeScript | ⭐7 |
-| [**kemo-graph**](https://github.com/kesepain-KE/kesepain-graph) 🧠 | 📊 本地知识图谱管理服务 — 图数据库 + 知识检索 + Obsidian 兼容（已归档，新版本重构中） | Python / FastAPI / Vue 3 / D3.js | ⭐1 |
-| [**llm-adapter-kemo**](https://github.com/kesepain-KE/llm-adapter-votx) | 🔌 LLM API 调用适配层 — 多提供商并发管理 + 多模态中转 + Token 精确统计 | Python / FastAPI / Node.js | ⭐1 |
-| [**raspberry-pi-skill**](https://github.com/kesepain-KE/raspberry-pi-skill) | 🥧 树莓派硬件控制技能包 — GPIO 读写 / PWM / I2C / SPI / UART / 传感器 + 系统监控 | Python | ⭐1 |
-| [**esp32-control**](https://github.com/kesepain-KE/votx-agent) | 📡 ESP32 远程控制拓展 — WiFi 远程 GPIO 操控 / 传感器采集 / 实时状态监控（kemo-agent 拓展模块） | Python / Arduino | - |
-| [**kesepain-Agent**](https://github.com/kesepain-KE/kesepain-Agent) | 📦 初代终端 Agent 框架（已归档） | Python | ⭐3 |
+| [**kemo-agent**](https://github.com/kesepain-KE/kemo-agent) | 🚀 新一代个人 AI Agent Runtime — 生命周期记忆、子代理协同、工具执行、外部扩展、多用户隔离 | Python / Flask / React / TypeScript | ⭐1 |
+| [**kemo-agent-doc**](https://github.com/kesepain-KE/kemo-agent-doc) | 📖 kemo-agent 使用说明与开发文档站 | TypeScript | ⭐1 |
+| [**kemo-adapter-api**](https://github.com/kesepain-KE/kemo-adapter-api) | 🔌 kemo 生态全能网关 — LLM 多提供商 + 多模态中转 + Token 统计 | Python | ⭐1 |
+| [**raspberry-pi-skill**](https://github.com/kesepain-KE/raspberry-pi-skill) | 🥧 树莓派硬件控制技能包 — GPIO / PWM / I2C / SPI / UART / 传感器 + 系统监控 | Python | ⭐1 |
+
+### 📦 前身与归档
+
+| 项目 | 说明 | ⭐ |
+|:-----|:-----|:--:|
+| [**votx-agent**](https://github.com/kesepain-KE/votx-agent) | ⬅️ kemo-agent 前身，v2 架构（MIT） | ⭐7 |
+| [**kesepain-Agent**](https://github.com/kesepain-KE/kesepain-Agent) | 📦 初代终端 Agent（已归档） | ⭐3 |
+| [**kesepain-graph**](https://github.com/kesepain-KE/kesepain-graph) | 🧠 本地知识图谱（已归档，由 kemo-graph 接替） | ⭐1 |
+| [**llm-adapter-votx**](https://github.com/kesepain-KE/llm-adapter-votx) | 🔌 旧 API 适配层（由 kemo-adapter-api 接替） | ⭐1 |
 
 <br>
 
@@ -53,20 +62,20 @@
 
 ```
 ┌─ 网关层 ───────────────────────────┐
-│  llm-adapter-kemo                    │  ← 多提供商 API 中转 + 多模态
+│  kemo-adapter-api                    │  ← 多提供商 API 中转 + 多模态
 └──────────────┬──────────────────────┘
                │ 提供 LLM 能力
 ┌──────────────▼──────────────────────┐
-│  kemo-agent (votx-agent ✦)          │  ← Agent 核心框架（事件驱动 / 自迭代）
+│  kemo-agent                          │  ← AI Agent Runtime（记忆 / 子代理 / 工具）
 └──┬──────────┬──────────┬───────────┘
    │          │          │
    ▼          ▼          ▼
 ┌──────┐  ┌────────┐  ┌──────────┐
-│ 知识  │  │  硬件   │  │  外部    │
-│ 图谱  │  │  技能   │  │  消息    │
+│ 文档  │  │  硬件   │  │  外部    │
+│ 站    │  │  技能   │  │  消息    │
 │kemo- │  │ pi-skill│  │  QQ/TG   │
-│graph │  │ esp32-  │  │  Telegram│
-│      │  │ control │  │          │
+│agent-│  │ esp32-  │  │  Telegram│
+│doc   │  │ control │  │          │
 └──────┘  └────────┘  └──────────┘
 ```
 
@@ -135,9 +144,10 @@
   
   | 时间 | 事件 |
   |:----|:-----|
-  | 🆕 | **kemo-agent** 本地演进中 — votx-agent 架构升级，事件驱动 + 子代理系统 |
-  | 🆕 | **ESP32 远程控制** 上线 — WiFi GPIO 操控，AI 能力延伸到物理世界 |
-  | 🔄 | **kesepain-graph** 归档中 — 新 kemo-graph 采用知识图谱替换方案 |
+  | 🆕 | **kemo-agent** 独立仓库上线 — votx-agent 架构升级，事件驱动 + 子代理系统 |
+  | 🆕 | **kemo-agent-doc** 文档站上线 |
+  | 🆕 | **kemo-adapter-api** 全能网关上线 |
+  | 🆕 | **ESP32 远程控制** 上线 — WiFi GPIO 操控，AI 延伸到物理世界 |
   | 📚 | 学习 **STM32 / ESP32** 裸机开发 — 零基础入门嵌入式 |
   
 </div>
