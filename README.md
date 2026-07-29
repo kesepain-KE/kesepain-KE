@@ -27,24 +27,19 @@
 
 ```mermaid
 flowchart TB
-    gateway["Kemo Provider Gateway<br/>多厂商模型 · 多模态 · 计量"]
-    agent["kemo-agent<br/>记忆 · 任务 · 子代理 · 工具<br/>感知 · 扩展 · 多入口交互"]
-    docs["文档与知识<br/>kemo-agent-doc"]
-    pi["硬件技能包<br/>Raspberry Pi"]
-    devices["真实环境与设备<br/>STM32 / ESP32"]
+    gateway("Kemo Provider Gateway")
+    agent("kemo-agent")
+    docs("文档与知识：kemo-agent-doc")
+    hardware("硬件能力：Raspberry Pi · STM32 · ESP32")
 
-    gateway -->|Kemo Provider Protocol| agent
-    docs <--> agent
-    agent --> pi
-    agent --> devices
-
-    classDef gateway fill:#E8F3F6,stroke:#256D84,stroke-width:1.5px,color:#12303D
-    classDef agent fill:#E5F4F7,stroke:#168AAD,stroke-width:2px,color:#12303D
-    classDef support fill:#F2F8F9,stroke:#5D8E9C,stroke-width:1.25px,color:#12303D
-    class gateway gateway
-    class agent agent
-    class docs,pi,devices support
+    gateway --> agent
+    docs --- agent
+    agent --> hardware
 ```
+
+- **Kemo Provider Gateway**：多厂商模型、多模态与计量。
+- **kemo-agent**：记忆、任务、子代理、工具、感知、扩展与多入口交互。
+- **硬件能力**：通过独立技能包和协议连接 Raspberry Pi、STM32 与 ESP32。
 
 ---
 
