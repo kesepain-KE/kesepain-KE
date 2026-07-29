@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://github.com/kesepain-KE">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:240B36,45:7B2CFF,100:00D4FF&height=200&section=header&text=kesepain&fontSize=60&fontAlignY=35&animation=fadeIn&fontColor=FFFFFF" alt="kesepain" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:183B4E,45:256D84,100:0095B3&height=200&section=header&text=kesepain&fontSize=60&fontAlignY=35&animation=fadeIn&fontColor=FFFFFF" alt="kesepain" />
 </a>
 
 # ✨ 你好，我是 kesepain
@@ -9,9 +9,9 @@
 **个人智能基础设施的构建者 · AI Agent 开发者 · 嵌入式学习者**
 
 [![GitHub followers](https://img.shields.io/github/followers/kesepain-KE?label=Follow&style=flat-square&logo=github)](https://github.com/kesepain-KE)
-[![Profile views](https://komarev.com/ghpvc/?username=kesepain-KE&style=flat-square&color=7B2CFF)](https://github.com/kesepain-KE)
-[![kemo-agent](https://img.shields.io/badge/kemo--agent-0.8.1-00A6FB?style=flat-square)](https://github.com/kesepain-KE/kemo-agent)
-[![Kemo Protocol](https://img.shields.io/badge/Kemo%20Protocol-1.0-9D4EDD?style=flat-square)](https://github.com/kesepain-KE/kemo-adapter-api)
+[![Profile views](https://komarev.com/ghpvc/?username=kesepain-KE&style=flat-square&color=256D84)](https://github.com/kesepain-KE)
+[![kemo-agent](https://img.shields.io/badge/kemo--agent-0.8.1-168AAD?style=flat-square)](https://github.com/kesepain-KE/kemo-agent)
+[![Kemo Protocol](https://img.shields.io/badge/Kemo%20Protocol-1.0-2A7F9E?style=flat-square)](https://github.com/kesepain-KE/kemo-adapter-api)
 
 </div>
 
@@ -25,24 +25,25 @@
 
 我喜欢把复杂系统拆成边界清晰、可以独立维护的模块：**通过 API 和明确协议协作，而不是把所有东西堆进同一个仓库。**
 
-```text
-                           ┌──────────────────────────────┐
-                           │      Kemo Provider Gateway   │
-                           │  多厂商模型 · 多模态 · 计量   │
-                           └──────────────┬───────────────┘
-                                          │ Kemo Provider Protocol
-                                          ▼
-┌──────────────┐              ┌──────────────────────────────┐
-│  文档与知识   │◀────────────▶│          kemo-agent          │
-│  kemo-agent- │              │  记忆 · 任务 · 子代理 · 工具  │
-│  doc         │              │  感知 · 扩展 · 多入口交互     │
-└──────────────┘              └───────────┬───────────┬──────┘
-                                           │           │
-                                           ▼           ▼
-                                  ┌────────────┐ ┌────────────┐
-                                  │ 硬件技能包  │ │ 真实环境与  │
-                                  │ Raspberry Pi│ │ STM32 / ESP32│
-                                  └────────────┘ └────────────┘
+```mermaid
+flowchart TB
+    gateway["Kemo Provider Gateway<br/>多厂商模型 · 多模态 · 计量"]
+    agent["kemo-agent<br/>记忆 · 任务 · 子代理 · 工具<br/>感知 · 扩展 · 多入口交互"]
+    docs["文档与知识<br/>kemo-agent-doc"]
+    pi["硬件技能包<br/>Raspberry Pi"]
+    devices["真实环境与设备<br/>STM32 / ESP32"]
+
+    gateway -->|Kemo Provider Protocol| agent
+    docs <--> agent
+    agent --> pi
+    agent --> devices
+
+    classDef gateway fill:#E8F3F6,stroke:#256D84,stroke-width:1.5px,color:#12303D
+    classDef agent fill:#E5F4F7,stroke:#168AAD,stroke-width:2px,color:#12303D
+    classDef support fill:#F2F8F9,stroke:#5D8E9C,stroke-width:1.25px,color:#12303D
+    class gateway gateway
+    class agent agent
+    class docs,pi,devices support
 ```
 
 ---
@@ -84,10 +85,10 @@
 
 <br><br>
 
-<img src="https://img.shields.io/badge/✨%20AI%20Agent-Architecture-00A6FB?style=for-the-badge" alt="AI Agent Architecture" />
-<img src="https://img.shields.io/badge/✦%20Protocol%20Gateway-Kemo-9D4EDD?style=for-the-badge" alt="Kemo Protocol Gateway" />
-<img src="https://img.shields.io/badge/⚡%20Embedded-STM32%20%2F%20ESP32-007ACC?style=for-the-badge" alt="STM32 and ESP32" />
-<img src="https://img.shields.io/badge/★%20Hardware-Raspberry%20Pi-E639B2?style=for-the-badge" alt="Raspberry Pi" />
+<img src="https://img.shields.io/badge/✨%20AI%20Agent-Architecture-168AAD?style=for-the-badge" alt="AI Agent Architecture" />
+<img src="https://img.shields.io/badge/✦%20Protocol%20Gateway-Kemo-2A7F9E?style=for-the-badge" alt="Kemo Protocol Gateway" />
+<img src="https://img.shields.io/badge/⚡%20Embedded-STM32%20%2F%20ESP32-2F7E8D?style=for-the-badge" alt="STM32 and ESP32" />
+<img src="https://img.shields.io/badge/★%20Hardware-Raspberry%20Pi-4A8C82?style=for-the-badge" alt="Raspberry Pi" />
 
 </div>
 
@@ -118,7 +119,7 @@
 [GitHub Profile](https://github.com/kesepain-KE) · [kemo-agent](https://github.com/kesepain-KE/kemo-agent) · [Online Docs](https://kesepain-ke.github.io/kemo-agent-doc/)
 
 <a href="https://github.com/kesepain-KE">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,45:7B2CFF,100:240B36&height=120&section=footer&animation=twinkling" alt="footer" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0095B3,45:256D84,100:183B4E&height=120&section=footer&animation=twinkling" alt="footer" />
 </a>
 
 </div>
