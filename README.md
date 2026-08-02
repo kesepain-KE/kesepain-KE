@@ -29,13 +29,13 @@
 flowchart TB
     gateway("Kemo Provider Gateway")
     agent("kemo-agent")
-    graph("kemo-graph 知识图谱")
+    kg("kemo-graph 知识图谱")
     docs("文档与知识：kemo-agent-doc")
     hardware("硬件能力：Raspberry Pi · STM32 · ESP32")
 
     gateway --> agent
     docs --- agent
-    agent --> graph
+    agent --> kg
     agent --> hardware
 ```
 
