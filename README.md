@@ -6,11 +6,11 @@
 
 # ✨ 你好，我是 kesepain
 
-**个人智能基础设施的构建者 · AI Agent 开发者 · 嵌入式学习者**
+**个人智能基础设施构建者 · AI Agent 开发者 · 长期记忆研究者**
 
 [![GitHub followers](https://img.shields.io/github/followers/kesepain-KE?label=Follow&style=flat-square&logo=github)](https://github.com/kesepain-KE)
 [![Profile views](https://komarev.com/ghpvc/?username=kesepain-KE&style=flat-square&color=256D84)](https://github.com/kesepain-KE)
-[![kemo-agent](https://img.shields.io/badge/kemo--agent-0.8.1-168AAD?style=flat-square)](https://github.com/kesepain-KE/kemo-agent)
+[![kemo-agent](https://img.shields.io/badge/kemo--agent-0.10.0-168AAD?style=flat-square)](https://github.com/kesepain-KE/kemo-agent)
 [![Kemo Protocol](https://img.shields.io/badge/Kemo%20Protocol-1.0-2A7F9E?style=flat-square)](https://github.com/kesepain-KE/kemo-adapter-api)
 
 </div>
@@ -21,7 +21,7 @@
 
 我关注的不是一个只会回答问题的聊天窗口，而是**能够长期陪伴、持续理解并真正把事情推进下去的个人智能基础设施**。
 
-这套探索从本地 Agent Runtime 出发：让记忆、上下文、任务、工具、环境感知和外部世界的连接能够在同一个可掌控的工作空间里协作；再以统一的模型协议网关隔离厂商差异，并把能力延伸到真实设备与嵌入式硬件。
+这套探索从本地 Agent Runtime 出发：让记忆、上下文、任务、工具、环境感知和外部世界的连接能够在同一个可掌控的工作空间里协作；再以统一的模型协议网关隔离厂商差异，用知识图谱强化智能体的检索与长期记忆，并把能力延伸到真实设备与嵌入式硬件。
 
 我喜欢把复杂系统拆成边界清晰、可以独立维护的模块：**通过 API 和明确协议协作，而不是把所有东西堆进同一个仓库。**
 
@@ -29,16 +29,19 @@
 flowchart TB
     gateway("Kemo Provider Gateway")
     agent("kemo-agent")
+    graph("kemo-graph 知识图谱")
     docs("文档与知识：kemo-agent-doc")
     hardware("硬件能力：Raspberry Pi · STM32 · ESP32")
 
     gateway --> agent
     docs --- agent
+    agent --> graph
     agent --> hardware
 ```
 
 - **Kemo Provider Gateway**：多厂商模型、多模态与计量。
 - **kemo-agent**：记忆、任务、子代理、工具、感知、扩展与多入口交互。
+- **kemo-graph 知识图谱**：为智能体提供结构化知识检索，强化 RAG 与长期记忆。
 - **硬件能力**：通过独立技能包和协议连接 Raspberry Pi、STM32 与 ESP32。
 
 ---
@@ -49,10 +52,20 @@ flowchart TB
 |:--|:--|:--|
 | [**kemo-agent**](https://github.com/kesepain-KE/kemo-agent) | 面向个人智能基础设施的本地多用户 Agent Runtime | 潮汐生命周期记忆、上下文管理、子代理、任务计划、定时调度、工具、感知、扩展和跨平台交互已形成可运行闭环。 |
 | [**kemo-adapter-api**](https://github.com/kesepain-KE/kemo-adapter-api) | Kemo Provider Gateway，多厂商模型协议网关 | 统一模型发现、流式响应、工具调用、能力声明、多模态 Asset、Embedding、Rerank 与 Token 计量。 |
+| [**kemo-graph**](https://github.com/kesepain-KE/kemo-graph) | kemo 生态知识图谱 | 帮助智能体检索结构化知识并强化 RAG 搜索，支撑长期记忆与知识层。 |
 | [**kemo-agent-doc**](https://github.com/kesepain-KE/kemo-agent-doc) | kemo-agent 的 VitePress 文档站 | 安装、配置、使用与扩展开发文档；已部署为 [在线文档](https://kesepain-ke.github.io/kemo-agent-doc/)。 |
 | [**raspberry-pi-skill**](https://github.com/kesepain-KE/raspberry-pi-skill) | 面向通用 AI Agent 的树莓派硬件技能包 | 用 `SKILL.md`、JSON Schema 与稳定 CLI 将 GPIO、PWM、设备语义控制和系统状态交给 Agent。 |
 
-### 正在学习与延伸
+### 相关项目
+
+| 项目 | 定位 |
+|:--|:--|
+| [**votx-agent**](https://github.com/kesepain-KE/votx-agent) | 面向个人部署的 AI Agent 框架（votx 系）：多用户数据隔离、Web UI、CLI、工具调用、任务计划、持久记忆、自我改进、外部消息路由和多模态。 |
+| [**llm-adapter-votx**](https://github.com/kesepain-KE/llm-adapter-votx) | votx-agent 的 API 调用适配项目。 |
+
+---
+
+## 正在学习与延伸
 
 - **STM32**：使用 STM32F103C8T6、标准外设库与寄存器级开发，沿着 GPIO、蜂鸣器、流水灯等基础外设一步步建立嵌入式能力。
 - **ESP32**：探索 Wi-Fi、GPIO 与 Agent 能力的连接，让智能体可以在现实世界中感知和执行。
@@ -69,6 +82,18 @@ flowchart TB
 - **能力增长不等于失去控制**：复杂任务先形成可理解、可干预的计划；自动化也要保留确认、暂停与回溯的权利。
 - **从软件走向物理世界**：AI 的价值不只在屏幕里，也在于能否安全、可靠地理解环境并连接真实设备。
 - **持续学习，尊重基础**：从 Python、协议与系统设计，到 MCU 寄存器和硬件引脚，耐心把每一层原理弄清楚。
+
+---
+
+## 我的工作方式
+
+- **够用就好**：反对过度工程，不为"未来可能"提前堆砌功能。
+- **文档先行**：先想清楚架构与边界条件，再动手写代码。
+- **内核思维**：把 kemo-agent 当作一个长期运行的系统内核来打磨，而不是一次性脚本。
+- **标准化接口，不预制连接**：基础设施提供协议与骨架，具体连接交给使用方。
+- **可靠性优先于智能度**：能精确执行就不加戏，能力范围外诚实说不知道。
+- **成本是设计约束**：上下文、记忆与感知的开销，和功能一样被认真对待。
+- **诚实直接**：基于证据的反馈，不写空洞的大词。
 
 ---
 
