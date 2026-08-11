@@ -10,7 +10,7 @@
 
 [![GitHub followers](https://img.shields.io/github/followers/kesepain-KE?label=Follow&style=flat-square&logo=github)](https://github.com/kesepain-KE)
 [![Profile views](https://komarev.com/ghpvc/?username=kesepain-KE&style=flat-square&color=256D84)](https://github.com/kesepain-KE)
-[![kemo-agent](https://img.shields.io/badge/kemo--agent-0.10.0-168AAD?style=flat-square)](https://github.com/kesepain-KE/kemo-agent)
+[![kemo-agent](https://img.shields.io/badge/kemo--agent-1.1.0-168AAD?style=flat-square)](https://github.com/kesepain-KE/kemo-agent)
 [![Kemo Protocol](https://img.shields.io/badge/Kemo%20Protocol-1.0-2A7F9E?style=flat-square)](https://github.com/kesepain-KE/kemo-adapter-api)
 
 </div>
@@ -21,7 +21,7 @@
 
 我关注的不是一个只会回答问题的聊天窗口，而是**能够长期陪伴、持续理解并真正把事情推进下去的个人智能基础设施**。
 
-这套探索从本地 Agent Runtime 出发：让记忆、上下文、任务、工具、环境感知和外部世界的连接能够在同一个可掌控的工作空间里协作；再以统一的模型协议网关隔离厂商差异，用知识图谱强化智能体的检索与长期记忆，并把能力延伸到真实设备与嵌入式硬件。
+这套探索从本地 Agent Runtime 出发：让记忆、上下文、任务、工具、环境感知和外部世界的连接能够在同一个可掌控的工作空间里协作；再以统一的模型协议网关隔离厂商差异，用知识图谱强化智能体的检索与长期记忆，以 Android 客户端把这段关系带进口袋，并把能力延伸到真实设备与嵌入式硬件。
 
 我喜欢把复杂系统拆成边界清晰、可以独立维护的模块：**通过 API 和明确协议协作，而不是把所有东西堆进同一个仓库。**
 
@@ -30,18 +30,21 @@ flowchart TB
     gateway("Kemo Provider Gateway")
     agent("kemo-agent")
     kg("kemo-graph 知识图谱")
+    app("kemo-agent-app Android 客户端")
     docs("文档与知识：kemo-agent-doc")
     hardware("硬件能力：Raspberry Pi · STM32 · ESP32")
 
     gateway --> agent
     docs --- agent
     agent --> kg
+    agent --> app
     agent --> hardware
 ```
 
 - **Kemo Provider Gateway**：多厂商模型、多模态与计量。
 - **kemo-agent**：记忆、任务、子代理、工具、感知、扩展与多入口交互。
 - **kemo-graph 知识图谱**：为智能体提供结构化知识检索，强化 RAG 与长期记忆。
+- **kemo-agent-app**：Android 生态客户端，通过 kemo_app 桥接服务把对话、任务与文件装进口袋。
 - **硬件能力**：通过独立技能包和协议连接 Raspberry Pi、STM32 与 ESP32。
 
 ---
@@ -50,9 +53,10 @@ flowchart TB
 
 | 项目 | 定位 | 当前进展 |
 |:--|:--|:--|
-| [**kemo-agent**](https://github.com/kesepain-KE/kemo-agent) | 面向个人智能基础设施的本地多用户 Agent Runtime | 潮汐生命周期记忆、上下文管理、子代理、任务计划、定时调度、工具、感知、扩展和跨平台交互已形成可运行闭环。 |
+| [**kemo-agent**](https://github.com/kesepain-KE/kemo-agent) | 面向个人智能基础设施的本地多用户 Agent Runtime | 潮汐生命周期记忆、上下文管理、子代理、任务计划、定时调度、工具、感知、扩展和跨平台交互已形成可运行闭环，1.1.0 完成移动端接入。 |
 | [**kemo-adapter-api**](https://github.com/kesepain-KE/kemo-adapter-api) | Kemo Provider Gateway，多厂商模型协议网关 | 统一模型发现、流式响应、工具调用、能力声明、多模态 Asset、Embedding、Rerank 与 Token 计量。 |
 | [**kemo-graph**](https://github.com/kesepain-KE/kemo-graph) | kemo 生态知识图谱 | 帮助智能体检索结构化知识并强化 RAG 搜索，支撑长期记忆与知识层。 |
+| [**kemo-agent-app**](https://github.com/kesepain-KE/kemo-agent-app) | kemo-agent 的 Android 生态客户端 | 连接 kemo-agent 与 Kemo 网关，在手机上继续对话、任务、文件、拓展感知与智能体配置。 |
 | [**kemo-agent-doc**](https://github.com/kesepain-KE/kemo-agent-doc) | kemo-agent 的 VitePress 文档站 | 安装、配置、使用与扩展开发文档；已部署为 [在线文档](https://kesepain-ke.github.io/kemo-agent-doc/)。 |
 | [**raspberry-pi-skill**](https://github.com/kesepain-KE/raspberry-pi-skill) | 面向通用 AI Agent 的树莓派硬件技能包 | 用 `SKILL.md`、JSON Schema 与稳定 CLI 将 GPIO、PWM、设备语义控制和系统状态交给 Agent。 |
 
