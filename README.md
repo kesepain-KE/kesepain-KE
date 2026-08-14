@@ -121,16 +121,6 @@ flowchart TB
 ## GitHub 活动
 
 <div align="center">
-  <a href="https://github.com/kesepain-KE">
-    <img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api?username=kesepain-KE&show_icons=true&theme=tokyonight&hide_border=true" alt="kesepain GitHub statistics" />
-  </a>
-  <a href="https://github.com/kesepain-KE">
-    <img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=kesepain-KE&layout=compact&theme=tokyonight&hide_border=true" alt="kesepain most used languages" />
-  </a>
-</div>
-
-<div align="center">
-  <br>
   <img src="https://github-readme-streak-stats-eight.vercel.app/?user=kesepain-KE&theme=tokyonight&hide_border=true" width="75%" alt="kesepain GitHub contribution streak" />
 </div>
 
