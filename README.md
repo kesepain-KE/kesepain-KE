@@ -10,8 +10,10 @@
 
 [![GitHub followers](https://img.shields.io/github/followers/kesepain-KE?label=Follow&style=flat-square&logo=github)](https://github.com/kesepain-KE)
 [![Profile views](https://komarev.com/ghpvc/?username=kesepain-KE&style=flat-square&color=256D84)](https://github.com/kesepain-KE)
-[![kemo-agent](https://img.shields.io/badge/kemo--agent-1.1.0-168AAD?style=flat-square)](https://github.com/kesepain-KE/kemo-agent)
-[![Kemo Protocol](https://img.shields.io/badge/Kemo%20Protocol-1.0-2A7F9E?style=flat-square)](https://github.com/kesepain-KE/kemo-adapter-api)
+[![kemo-agent](https://img.shields.io/badge/kemo--agent-1.5.1-168AAD?style=flat-square)](https://github.com/kesepain-KE/kemo-agent)
+[![Kemo Protocol](https://img.shields.io/badge/Kemo%20Protocol-2.0-2A7F9E?style=flat-square)](https://github.com/kesepain-KE/kemo-adapter-api)
+[![kemo-graph](https://img.shields.io/badge/kemo--graph-1.6.0-2F7E8D?style=flat-square)](https://github.com/kesepain-KE/kemo-graph)
+[![kemo-agent-app](https://img.shields.io/badge/kemo--agent--app-1.1.8-4A8C82?style=flat-square)](https://github.com/kesepain-KE/kemo-agent-app)
 
 </div>
 
@@ -33,12 +35,14 @@ flowchart TB
     app("kemo-agent-app Android 客户端")
     docs("文档与知识：kemo-agent-doc")
     hardware("硬件能力：Raspberry Pi · STM32 · ESP32")
+    embodied("具身智能：SO-ARM101 · LeRobot · VLA")
 
     gateway --> agent
     docs --- agent
     agent --> kg
     agent --> app
     agent --> hardware
+    agent --> embodied
 ```
 
 - **Kemo Provider Gateway**：多厂商模型、多模态与计量。
@@ -46,6 +50,17 @@ flowchart TB
 - **kemo-graph 知识图谱**：为智能体提供结构化知识检索，强化 RAG 与长期记忆。
 - **kemo-agent-app**：Android 生态客户端，通过 kemo_app 桥接服务把对话、任务与文件装进口袋。
 - **硬件能力**：通过独立技能包和协议连接 Raspberry Pi、STM32 与 ESP32。
+- **具身智能**：机械臂采集真机数据，训练视觉-语言-动作策略，把决策链路从屏幕延伸到物理执行。
+
+---
+
+## 最近在做
+
+- **具身智能与 VLA 策略**：用 SO-ARM101 六轴机械臂配合 LeRobot 采集真机抓取数据，云端训练 ACT 与 SmolVLA 策略，再回到本机做真机推理与推理频率调优。目标不是「能抓一次」，而是让策略真正使用语言与视觉——在有多余物体的桌面上按指令选择目标，而不是只记住位置先验。
+- **数据质量优先**：抓取失败大多不是模型不够大，而是采集覆盖不足。我在做物体初始位置的空间覆盖与颜色均衡分析，用「先看数据缺口、再决定采哪一轮」的方式减少无效训练。
+- **能力标准化**：把硬件与系统能力封装成 Agent 可直接调用的技能包与拓展（树莓派 GPIO、串口协议、远程维护、桌面操控），让「智能体连上真实设备」变成装配问题，而不是每个项目重写一遍。
+- **长期记忆与知识**：继续打磨记忆生命周期、上下文压缩和知识分类检索，把「能记住」推进到「记得准、需要时拿得出来」。
+- **文档与可复现**：把踩过的每一类坑（帧率被可视化拖垮、执行粒度与迟滞死锁、版本迁移差异）沉淀成可复现的笔记和命令，而不是只留在一次对话里。
 
 ---
 
@@ -53,10 +68,10 @@ flowchart TB
 
 | 项目 | 定位 | 当前进展 |
 |:--|:--|:--|
-| [**kemo-agent**](https://github.com/kesepain-KE/kemo-agent) | 面向个人智能基础设施的本地多用户 Agent Runtime | 潮汐生命周期记忆、上下文管理、子代理、任务计划、定时调度、工具、感知、扩展和跨平台交互已形成可运行闭环，1.1.0 完成移动端接入。 |
-| [**kemo-adapter-api**](https://github.com/kesepain-KE/kemo-adapter-api) | Kemo Provider Gateway，多厂商模型协议网关 | 统一模型发现、流式响应、工具调用、能力声明、多模态 Asset、Embedding、Rerank 与 Token 计量。 |
-| [**kemo-graph**](https://github.com/kesepain-KE/kemo-graph) | kemo 生态知识图谱 | 帮助智能体检索结构化知识并强化 RAG 搜索，支撑长期记忆与知识层。 |
-| [**kemo-agent-app**](https://github.com/kesepain-KE/kemo-agent-app) | kemo-agent 的 Android 生态客户端 | 连接 kemo-agent 与 Kemo 网关，在手机上继续对话、任务、文件、拓展感知与智能体配置。 |
+| [**kemo-agent**](https://github.com/kesepain-KE/kemo-agent) | 面向个人智能基础设施的本地多用户 Agent Runtime | `1.5.1`：潮汐生命周期记忆、上下文压缩与归档、子代理协同、任务计划、定时调度、工具与技能、感知与拓展、四渠道部署和跨平台入口已形成可运行闭环，并以 Apache-2.0 开放源码。 |
+| [**kemo-adapter-api**](https://github.com/kesepain-KE/kemo-adapter-api) | Kemo Provider Gateway，多厂商模型协议网关 | `1.0.0`：统一模型发现、流式响应、工具调用、能力声明、多模态 Asset、Embedding、Rerank 与 Token 计量，稳定承载冻结的 Kemo 2.0 协议。 |
+| [**kemo-graph**](https://github.com/kesepain-KE/kemo-graph) | kemo 生态知识图谱与文档检索服务 | `1.6.0`：把教学资料、文档与笔记构建为图谱 + RAG，为智能体提供结构化检索，支撑长期记忆与知识层。 |
+| [**kemo-agent-app**](https://github.com/kesepain-KE/kemo-agent-app) | kemo-agent 的 Android 生态客户端 | `1.1.8`：连接 kemo-agent 与 Kemo 网关，在手机上继续对话、任务、文件、拓展感知与智能体配置，支持多账号离线切换。 |
 | [**kemo-agent-doc**](https://github.com/kesepain-KE/kemo-agent-doc) | kemo-agent 的 VitePress 文档站 | 安装、配置、使用与扩展开发文档；已部署为 [在线文档](https://kesepain-ke.github.io/kemo-agent-doc/)。 |
 | [**raspberry-pi-skill**](https://github.com/kesepain-KE/raspberry-pi-skill) | 面向通用 AI Agent 的树莓派硬件技能包 | 用 `SKILL.md`、JSON Schema 与稳定 CLI 将 GPIO、PWM、设备语义控制和系统状态交给 Agent。 |
 
@@ -69,11 +84,13 @@ flowchart TB
 
 ---
 
-## 正在学习与延伸
+## 研究与延伸方向
 
-- **STM32**：使用 STM32F103C8T6、标准外设库与寄存器级开发，沿着 GPIO、蜂鸣器、流水灯等基础外设一步步建立嵌入式能力。
-- **ESP32**：探索 Wi-Fi、GPIO 与 Agent 能力的连接，让智能体可以在现实世界中感知和执行。
+- **具身智能与 VLA**：从 ACT 到 SmolVLA，研究视觉-语言-动作策略在低成本机械臂上的真机落地——数据采集覆盖、云端训练成本、推理延迟与控制频率，以及「语言条件真的生效了吗」这类必须用实验回答的问题。
+- **嵌入式与硬件**：STM32 从标准外设库到寄存器级开发，沿着 GPIO、定时器、总线一步步把底层搞清楚；ESP32 负责把 Wi-Fi 与 Agent 能力接起来，让智能体在现实世界里能感知、也能执行。
+- **ARM 与边缘部署**：把智能体放到随身设备、树莓派和服务器上，验证在内存、算力、网络都不理想时哪些设计仍然成立。
 - **长期智能体**：持续打磨记忆生命周期、可恢复上下文、可控任务编排，以及本地优先的数据边界。
+- **学习方式**：先建立可运行的最小闭环，再用实测数据修正认知——社区经验只作为方向参考，最终结论以自己的实测为准。
 
 ---
 
@@ -105,12 +122,13 @@ flowchart TB
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,fastapi,react,ts,vite,nodejs,git,linux,bash,cmake&perline=10" alt="Python, FastAPI, React, TypeScript, Vite, Node.js, Git, Linux, Bash, CMake" />
+<img src="https://skillicons.dev/icons?i=python,pytorch,opencv,c,cpp,kotlin,fastapi,react,ts,vite,nodejs,docker,sqlite,git,linux,bash,cmake&perline=17" alt="Python, PyTorch, OpenCV, C, C++, Kotlin, FastAPI, React, TypeScript, Vite, Node.js, Docker, SQLite, Git, Linux, Bash, CMake" />
 
 <br><br>
 
 <img src="https://img.shields.io/badge/✨%20AI%20Agent-Architecture-168AAD?style=for-the-badge" alt="AI Agent Architecture" />
 <img src="https://img.shields.io/badge/✦%20Protocol%20Gateway-Kemo-2A7F9E?style=for-the-badge" alt="Kemo Protocol Gateway" />
+<img src="https://img.shields.io/badge/🤖%20Embodied%20AI-VLA%20·%20LeRobot-3B7A8C?style=for-the-badge" alt="Embodied AI and VLA" />
 <img src="https://img.shields.io/badge/⚡%20Embedded-STM32%20%2F%20ESP32-2F7E8D?style=for-the-badge" alt="STM32 and ESP32" />
 <img src="https://img.shields.io/badge/★%20Hardware-Raspberry%20Pi-4A8C82?style=for-the-badge" alt="Raspberry Pi" />
 
@@ -128,7 +146,7 @@ flowchart TB
 
 <div align="center">
 
-如果你也在关注长期记忆、可控智能体、多模型协议、个人 AI 基础设施，或是 AI 与嵌入式硬件的结合，欢迎来交流。
+如果你也在关注长期记忆、可控智能体、多模型协议、个人 AI 基础设施，或是 AI 与嵌入式硬件、具身智能和 VLA 的结合，欢迎来交流。
 
 [GitHub Profile](https://github.com/kesepain-KE) · [kemo-agent](https://github.com/kesepain-KE/kemo-agent) · [Online Docs](https://kesepain-ke.github.io/kemo-agent-doc/)
 
