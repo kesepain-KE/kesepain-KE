@@ -10,9 +10,9 @@
 
 [![GitHub followers](https://img.shields.io/github/followers/kesepain-KE?label=Follow&style=flat-square&logo=github)](https://github.com/kesepain-KE)
 [![Profile views](https://komarev.com/ghpvc/?username=kesepain-KE&style=flat-square&color=256D84)](https://github.com/kesepain-KE)
-[![kemo-agent](https://img.shields.io/badge/kemo--agent-1.5.1-168AAD?style=flat-square)](https://github.com/kesepain-KE/kemo-agent)
+[![kemo-agent](https://img.shields.io/badge/kemo--agent-2.0.0-168AAD?style=flat-square)](https://github.com/kesepain-KE/kemo-agent)
 [![Kemo Protocol](https://img.shields.io/badge/Kemo%20Protocol-2.0-2A7F9E?style=flat-square)](https://github.com/kesepain-KE/kemo-adapter-api)
-[![kemo-graph](https://img.shields.io/badge/kemo--graph-1.6.0-2F7E8D?style=flat-square)](https://github.com/kesepain-KE/kemo-graph)
+[![kemo-graph](https://img.shields.io/badge/kemo--graph-2.0.0-2F7E8D?style=flat-square)](https://github.com/kesepain-KE/kemo-graph)
 [![kemo-agent-app](https://img.shields.io/badge/kemo--agent--app-1.1.8-4A8C82?style=flat-square)](https://github.com/kesepain-KE/kemo-agent-app)
 
 </div>
@@ -68,9 +68,9 @@ flowchart TB
 
 | 项目 | 定位 | 当前进展 |
 |:--|:--|:--|
-| [**kemo-agent**](https://github.com/kesepain-KE/kemo-agent) | 面向个人智能基础设施的本地多用户 Agent Runtime | `1.5.1`：潮汐生命周期记忆、上下文压缩与归档、子代理协同、任务计划、定时调度、工具与技能、感知与拓展、四渠道部署和跨平台入口已形成可运行闭环，并以 Apache-2.0 开放源码。 |
-| [**kemo-adapter-api**](https://github.com/kesepain-KE/kemo-adapter-api) | Kemo Provider Gateway，多厂商模型协议网关 | `1.0.0`：统一模型发现、流式响应、工具调用、能力声明、多模态 Asset、Embedding、Rerank 与 Token 计量，稳定承载冻结的 Kemo 2.0 协议。 |
-| [**kemo-graph**](https://github.com/kesepain-KE/kemo-graph) | kemo 生态知识图谱与文档检索服务 | `1.6.0`：把教学资料、文档与笔记构建为图谱 + RAG，为智能体提供结构化检索，支撑长期记忆与知识层。 |
+| [**kemo-agent**](https://github.com/kesepain-KE/kemo-agent) | 面向个人智能基础设施的本地多用户 Agent Runtime | `2.0.0`：历史统一为 CardStream，配置与模块清单转为 YAML，感知与拓展支持热加载，知识库改按真实路径组织；插件新增本地权限分类与用户级过滤，检索参数与图谱读写入口同步调整；四渠道部署与跨平台入口保持，并以 Apache-2.0 开放源码。 |
+| [**kemo-adapter-api**](https://github.com/kesepain-KE/kemo-adapter-api) | Kemo Provider Gateway，多厂商模型协议网关 | `2.0.0`：统一提供商管理、模型路由、凭据与智能体操控；模型发现、流式响应、工具调用、能力声明、多模态 Asset、Embedding、Rerank 与 Token 计量齐备，承载 Kemo Protocol 2.0。 |
+| [**kemo-graph**](https://github.com/kesepain-KE/kemo-graph) | kemo 生态知识图谱与文档检索服务 | `2.0.0`：把教学资料、文档与笔记构建为图谱 + RAG，为智能体提供结构化检索；后端按领域拆分为独立门面，协议默认升级到 2.0，支持图谱节点与关系直接创建、原始文件与图谱产物并列浏览。 |
 | [**kemo-agent-app**](https://github.com/kesepain-KE/kemo-agent-app) | kemo-agent 的 Android 生态客户端 | `1.1.8`：连接 kemo-agent 与 Kemo 网关，在手机上继续对话、任务、文件、拓展感知与智能体配置，支持多账号离线切换。 |
 | [**kemo-agent-doc**](https://github.com/kesepain-KE/kemo-agent-doc) | kemo-agent 的 VitePress 文档站 | 安装、配置、使用与扩展开发文档；已部署为 [在线文档](https://kesepain-ke.github.io/kemo-agent-doc/)。 |
 | [**raspberry-pi-skill**](https://github.com/kesepain-KE/raspberry-pi-skill) | 面向通用 AI Agent 的树莓派硬件技能包 | 用 `SKILL.md`、JSON Schema 与稳定 CLI 将 GPIO、PWM、设备语义控制和系统状态交给 Agent。 |
